@@ -9,6 +9,7 @@ import Dashboard from './Dashboard';
 import UserCard from './UserInfo';
 import AddPoll from './AddPoll';
 import Leader from './Leader';
+import NoMatch from './NoMatch';
 
 class App extends Component {
   componentDidMount() {
@@ -32,10 +33,13 @@ class App extends Component {
               <NavBar />
               <ContentGrid>
                 <Switch>
-                  <Route exact path="/" component={Dashboard} />           
+                  <Route exact path="/" component={Dashboard} />      
+                  <Route path="/questions/bad_id" component={NoMatch} />     
                   <Route path="/questions/:question_id" component={UserCard} />
                   <Route path="/add" component={AddPoll} />
                   <Route path="/Leader" component={Leader} />
+
+                  <Route component={NoMatch} />
            
                 </Switch>
               </ContentGrid>
