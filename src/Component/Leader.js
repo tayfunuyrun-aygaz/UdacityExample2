@@ -12,7 +12,7 @@ import {
 
 const trophyColor = ['yellow', 'grey', 'orange'];
 
-export class Leader extends Component {
+export class LeaderBoard extends Component {
   static propType = {
     leaderboardData: PropType.array.isRequired
   };
@@ -75,4 +75,4 @@ function mapStateToProps({ users }) {
   };
 }
 
-export default connect(mapStateToProps)(Leader);
+export default connect(mapStateToProps)(LeaderBoard);
