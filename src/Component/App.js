@@ -37,7 +37,7 @@ class App extends Component {
                   <Route path="/questions/bad_id" component={NoMatch} />     
                   <Route path="/questions/:question_id" component={UserCard} />
                   <Route path="/add" component={AddPoll} />
-                  <Route path="/LeaderBoard" component={Leader} />
+                  <Route path="/leaderboard" component={Leader} />
 
                   <Route component={NoMatch} />
            
